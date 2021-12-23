@@ -4,6 +4,15 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
+/*
+
+Created with:
+php spark migrate:create add_user
+
+Run with:
+php spark migrate
+
+*/
 class AddUser extends Migration
 {
     public function up()
