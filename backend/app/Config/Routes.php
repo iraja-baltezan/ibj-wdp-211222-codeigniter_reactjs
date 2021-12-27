@@ -20,7 +20,14 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+
+/*
+ * When an unknown route is encountered, instead of rendering the error_404
+ * view, our API will render the index page and allow React to determine what
+ * should be displayed - be it a corresponding view or a 404 page.
+ */
+$routes->set404Override(function(){ echo view('welcome_message'); });
+
 $routes->setAutoRoute(true);
 
 /*
