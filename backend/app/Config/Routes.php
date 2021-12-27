@@ -27,7 +27,6 @@ $routes->setTranslateURIDashes(false);
  * should be displayed - be it a corresponding view or a 404 page.
  */
 $routes->set404Override(function(){ echo view('welcome_message'); });
-
 $routes->setAutoRoute(true);
 
 /*
