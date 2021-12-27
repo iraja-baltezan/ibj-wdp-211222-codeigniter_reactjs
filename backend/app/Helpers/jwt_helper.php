@@ -10,7 +10,7 @@ function getJWTFromRequest($authenticationHeader):string
         throw new Exception('Missing or invalid JWT in request');
 
     //  JWT is sent from client in format Bearer XXXXXXXX
-    return explode('', $authenticationHeader[1]);
+    return explode(' ', $authenticationHeader)[1];
 }
 
 function validateJWTFromRequest(string $encodedToken)
