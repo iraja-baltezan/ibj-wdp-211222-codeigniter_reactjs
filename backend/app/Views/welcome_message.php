@@ -8,8 +8,12 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
     <base href="/"/>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
         #app {
-            margin: 50px;
+            margin: 0px;
         }
     </style>
 </head>
