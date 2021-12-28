@@ -15,5 +15,10 @@
     "react-router-dom": "^6.2.1",
     "reactstrap": "^9.0.1",
     "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "babel-loader": "^8.2.3"
   }
 }
