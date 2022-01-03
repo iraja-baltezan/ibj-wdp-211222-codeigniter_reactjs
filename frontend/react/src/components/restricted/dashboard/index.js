@@ -16,7 +16,7 @@
 import React from 'react';
 import DashboardMenu from './Menu';
 import {BrowserRouter as Router} from 'react-router-dom';
-import Routes from '../../routing/Routes';
+import AppRoutes from '../../routing/AppRoutes';
 
 const Dashboard = ({logout}) => {
 
@@ -24,7 +24,7 @@ const Dashboard = ({logout}) => {
         <Router>
             <>
                 <DashboardMenu logout={logout}/>
-                <Routes/>
+                <AppRoutes/>
             </>
         </Router>
     )

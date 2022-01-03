@@ -34,7 +34,7 @@ import {
 import FailureAlert from '../../../alert/Failure';
 import { makeRequest } from '../../../../utility/Api';
 import SuccessAlert from '../../../alert/Success';
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 const BaseClientForm = ({ client }) => {
     const [errors, setErrors] = useState(null);
@@ -90,7 +90,7 @@ const BaseClientForm = ({ client }) => {
     };
 
     return shouldRedirect ? (
-        <Redirect to='/' />
+        <Navigate to='/' />
     ) : (
         <>
             {errors && <FailureAlert errors={errors} />}

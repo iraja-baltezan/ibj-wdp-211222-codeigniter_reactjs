@@ -42,7 +42,7 @@ const DashboardMenu = ({logout}) => {
                         <DropdownToggle nav caret>
                             More Actions
                         </DropdownToggle>
-                        <DropdownMenu right>
+                        <DropdownMenu end>
                             <DropdownItem>
                                 <NavLink tag={Link} to={'/client/add'}>
                                     Add Client
