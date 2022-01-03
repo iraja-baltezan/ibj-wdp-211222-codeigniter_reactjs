@@ -19,7 +19,11 @@ application/logs/*
 
 #React JS
 .DS_STORE
+.DS_*
+**/*.backup.*
+**/*.back.*
 node_modules
+bower_components
 scripts/flow/*/.flowconfig
 .flowconfig
 *~
@@ -34,8 +38,10 @@ coverage/
 fixtures/dom/public/react-dom.js
 fixtures/dom/public/react.js
 test/the-files-to-test.generated.js
+logs
 *.log*
 chrome-user-data
+*.sublime*
 *.sublime-project
 *.sublime-workspace
 .idea
@@ -43,6 +49,8 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+
+dist/
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
