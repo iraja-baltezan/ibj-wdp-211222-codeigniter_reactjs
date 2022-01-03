@@ -23,8 +23,8 @@ Inspired by [OLUYEMI OLUSUSI](https://github.com/yemiwebby)'s tutorials:
 
 The __"doc"__ folder contains a copy of the CodeIgniter and Devilbox ".env" files, where the PHP and MySQL versions used in the project can be consulted.
 
-- The __"devilbox.env"__ is the __.env__ file at Devilbox git directory root.
-- The __"codeigniter.env"__ is the __.env__ file at CodeIgniter's __"backend"__ directory.
+- The __"devilbox.env"__ is the __.env__ file in the root of Devilbox's git directory.
+- The __"codeigniter.env"__ is the __.env__ file in the CodeIgniter's __"backend"__ directory.
 
 The __.env__ files were included in the Git commits for educational purposes.
 
