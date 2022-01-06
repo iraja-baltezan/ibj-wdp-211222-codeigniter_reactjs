@@ -22,7 +22,7 @@ import Register from './Register';
 import {Button} from 'reactstrap';
 import FailureAlert from '../alert/Failure';
 import {makeRequest} from '../../utility/Api';
-import successfulAuthenticationCallback from '../../utility/Authentication';
+import {successfulAuthenticationCallback} from '../../utility/Authentication';
 
 const Authentication = ({setIsAuthenticated}) => {
     const [isLogin, setIsLogin] = useState(false);

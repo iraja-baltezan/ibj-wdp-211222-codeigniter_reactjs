@@ -1,24 +1,25 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import {clearState, loadJWT} from './utility/LocalStorage';
+import {clearState} from './utility/LocalStorage';
 import Authentication from './components/authentication/Authentication';
+import { isAuthenticated } from './utility/Authentication';
 import Dashboard from './components/restricted/dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const Root = () => {
-    const [isAuthenticated, setIsAuthenticated] = useState(!!loadJWT());
+    const [isLogged, setIsLogged] = useState(!!isAuthenticated());
 
     const onLogin = () => {
-        setIsAuthenticated(true);
+        setIsLogged(true);
     };
 
     const onLogout = () => {
         clearState();
-        setIsAuthenticated(false);
+        setIsLogged(false);
     };
 
-    return !isAuthenticated ?
+    return !isLogged ?
         <Authentication
             setIsAuthenticated={onLogin}
         />

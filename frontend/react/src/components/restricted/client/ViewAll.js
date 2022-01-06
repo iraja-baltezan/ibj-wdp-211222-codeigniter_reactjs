@@ -77,7 +77,7 @@ const ClientsTable = () => {
                 setResponseMessage(message);
             },
             failureCallback: (error) => {
-                console.log(error);
+                console.log('Client ViewAll error: ', error);
             },
             requestType: 'GET',
             authorization: loadJWT(),
