@@ -30,6 +30,9 @@ class Services extends BaseService
      * }
      */
 
+    /**
+     * Helper function to get the secret key from .env file.
+     */
     public static function getJwtSecretKey(){
         return getenv('JWT_SECRET_KEY');
     }
