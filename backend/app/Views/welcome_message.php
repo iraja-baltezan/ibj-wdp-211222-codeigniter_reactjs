@@ -22,9 +22,7 @@
 
 </div>
 
-<!-- SCRIPTS -->
-<script src="public/dist/main.js" charset="utf-8"></script>
-<!-- -->
+<script src="public/main.js" charset="utf-8"></script>
 
 </body>
 </html>
